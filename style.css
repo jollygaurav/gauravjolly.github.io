@@ -1,0 +1,471 @@
+body{
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.bg{
+	background-color: black;
+    width: 100%;
+    background-size: cover;
+    padding: 0px;
+    background-repeat: no-repeat;
+}
+.menubar{
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;  
+}
+#menubarElements{
+    position: relative;
+    font-size: 44px;
+    color:whitesmoke;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 12px;
+    padding-left: 40px;
+    padding-top: 22px;
+}
+
+#menubarElements:hover{
+	color: orange;
+}
+
+#menubarElements .tooltip {
+    visibility: hidden;
+    height: 20px;
+    width: 120px;
+    background-color:inherit;
+   	color: orange;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2px;
+    font-size:22px;
+    /*font-family: Taki,serif;*/
+    /*font-style: italic;*/
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#menubarElements:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.home{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.myImage{
+    border-radius: 70%;
+    margin-top: 15px;
+    width: 253px;
+}
+
+
+.toBeLeft{
+	width: 10%;
+}
+
+.textUnderImage{
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 4px;
+    text-anchor: inherit;
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+}
+.textUnderImage a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.textUnderImage a:hover{
+    color: orange;
+    font-size: 22px;
+}
+
+
+
+#Experience{
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#000),to(#172229)),-webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
+	/*box-sizing: border-box;*/
+	
+    height: 100%;
+    
+}
+
+.mySlides {
+	display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+  height: 90%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 23px;
+  /*padding: 8px 12px;*/
+  position: absolute;
+  /*bottom: 8px;*/
+  width: 100%;
+  text-align: center;
+  line-height: 53px;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: orange;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  display: none;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.text h1{
+	font-size: 25px;
+	color: orange;
+}
+
+.dots{
+	text-align: center;
+}
+
+#Education{
+	/*background-image: linear-gradient(0deg,#000,#010f1f),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));*/
+  background-image: url(images/background3.jpg);
+	height: 100%;
+   color: #bbb;
+   /*box-sizing: border-box;
+  padding: 1rem;
+  font-family: 'Playfair Display', serif;*/
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.timeline {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  border: 1px solid #475846 ;
+  right: 40px;
+  top: 0;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 700px) {
+  .timeline {
+    padding: 2rem;
+  }
+  .timeline:before {
+    left: calc(50% - 1px);
+    right: auto;
+  }
+}
+
+.timeline__item {
+  padding: 1rem;
+  border: 2px solid #475846;
+  border-image: linear-gradient(to right, skyblue 0%, #475846 100%);
+  border-image-slice: 1;
+  position: relative;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+.timeline__item:after, .timeline__item:before {
+  content: '';
+  position: absolute;
+}
+.timeline__item:before {
+  right: -10px;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: #475846 #475846 transparent transparent;
+  border-width: 10px;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 700px) {
+  .timeline__item {
+    width: 44%;
+    margin: 1rem;
+  }
+  .timeline__item:nth-of-type(2n) {
+    float: right;
+    margin: 1rem;
+    border-image: linear-gradient(to right, #475846 0%, skyblue 100%);
+    border-image-slice: 1;
+  }
+  .timeline__item:nth-of-type(2n):before {
+    right: auto;
+    left: -10px;
+    border-color: transparent transparent #475846 #475846;
+  }
+}
+
+.timeline__item--year {
+  text-align: center;
+  max-width: 150px;
+  margin: 0 48px 0 auto;
+  font-size: 1.8rem;
+  background-color: #475846;
+  line-height: 1;
+  border-image: none;
+  padding: .5rem 1rem 1rem;
+}
+.timeline__item--year:before {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .timeline__item--year {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .timeline__item--year:nth-of-type(2n) {
+    float: none;
+    margin: 0 auto;
+    border-image: none;
+  }
+  .timeline__item--year:nth-of-type(2n):before {
+    display: none;
+  }
+}
+
+.timeline__title {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+.timeline__blurb {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: .5rem 0 0;
+}
+
+
+#Skills{
+    background-image: linear-gradient(0deg,#000,#0b000e),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
+    height: 100%;
+    
+}
+#Skills p{
+  color: white;
+font-size: xxx-large;
+text-align: center;
+letter-spacing: 7px;
+margin:0; 
+line-height: 2em;
+}
+
+#Skills .images{
+  /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 426px;*/
+    /*background-color: white;*/
+    letter-spacing: 81px;
+    line-height: 6;
+    text-align: center;  
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .2s ;
+}
+#Skills img{
+    height: 80px;
+    /*width: 70px;*/
+    
+}
+#Skills .images:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+
+#Contact{
+	background-image: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
+    height: 100%;
+    margin: 0 auto;
+}
+
+#Contact p{
+  font-size: 69px;
+text-align: center;
+margin: 0px 0px;
+color: whitesmoke;
+letter-spacing: 17px;
+padding-top: 46px;
+}
+
+.center {
+  display: table;
+  width: 100%;
+  height: 74%;
+}
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+#social-test .social {
+  padding-left: 0px;
+}
+#social-test li {
+  color: rgba(167, 146, 129, 0.6);
+  list-style-type: none;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.3em;
+  line-height: 1.6em; 
+  padding: 2%;
+  border: 1px solid rgba(167, 146, 129, 0.4);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease 0.3s;
+}
+#social-test li:hover {
+  color: #a79281;
+  border: 1px solid #a79281;
+}
+.social:hover > li {
+  opacity: 0.5;
+}
+.social:hover > li:hover {
+  opacity: 1;
+}
+
+.social a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/*
+
+#contact__text{
+  font-size: 3em;
+  color: white;
+  height: 20%;
+}
+
+#contact_icons{
+  height: 30%;
+
+
+
+align-items: center;
+display: flex;
+
+position: relative;
+min-width: 100%;
+
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+.fav_icon{
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  height: 7em;
+  width: 7em;
+}
+
+.fav_icon i{
+  font-size: 82px;
+  padding-top: 15px;
+  position: relative;
+}
+*/
+
