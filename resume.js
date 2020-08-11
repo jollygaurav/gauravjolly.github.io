@@ -27,21 +27,6 @@ function showSlides(n) {
 }
 
 
-function contactUsBlock(item,color){
-  var phoneText="Just a Call Away At +91-8745059424";
-  document.getElementById("contact_text").innerHTML=phoneText;
-  document.getElementById("contact_text").style.display = "block";
-  document.getElementById("contact_text").style.color="red";
-  // document.getElementById("_linkedin").style.backgroundColor="skyblue";
-  document.getElementById(item).style.color=color;
-  
-}
-function contactUsHide(item){
-  document.getElementById("contact_text").style.display = "none";
- document.getElementById(item).style.color="black";
- // document.getElementById("_linkedin").style.backgroundColor="white";
-}
-
 
 
 
