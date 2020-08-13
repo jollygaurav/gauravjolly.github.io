@@ -372,7 +372,13 @@ line-height: 2em;
 #Contact{
 	background-image: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
     margin: 0 auto;
+    height: 100%
 }
+
+@media only screen and (max-width: 1000px) {
+  #Contact {height: 50%}
+}
+
 
 #Contact p{
   font-size: 69px;
@@ -386,8 +392,10 @@ padding-top: 46px;
 .center {
   display: table;
   width: 100%;
-  height: 51%;
+  height: 74%;
 }
+
+
 #social-test {
   display: table-cell;
   vertical-align: middle;
